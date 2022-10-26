@@ -8,50 +8,85 @@
 	<link rel="stylesheet" href="css/styles-dashboard.css">
 </head>
 <body>
-	<div class="container-fluid bg-dark row fixed-top">
+	<div class="container-fluid bg-gay row fixed-top">
 		<nav class="row fixed-top">
 			<div class="col-lg-2 col-mg-3 bg-dark row align-items-center">
-				<img class= "img-fluid align-items-center" src="../Nuevo/img/logo.png" class="d-block w-100" alt="...">
+				<img class= "img-fluid align-items-center" src="img/logo.png" class="d-block w-100" alt="...">
 			</div>
 			<div class="col-lg-10 col-mg-9 p-0 bg-dark">
 				<ul class="row align-items-end justify-content-end nav-menu">
 					<li class="nav-menu-item">
-						<a href="inicio.php" class="nav-menu-link nav-link texto">Inicio</a>
+						<a href="modules/principal/pagprincipal.html" target="area-trabajo" class="nav-menu-link nav-link texto">Inicio</a>
 					</li>
 					<li class="nav-menu-item">
-						<a href="inventario.php" class="nav-menu-link nav-link texto">Inventario</a>
+						<a href="modules/productos/nuev_prod.html"  target="area-trabajo" class="nav-menu-link nav-link texto">Inventario</a>
 					</li>
 					<li class="nav-menu-item">
-						<a href="caja.php" class="nav-menu-link nav-link texto">Caja</a>
+						<a href="modules/caja/consul_fac.html"  target="area-trabajo" class="nav-menu-link nav-link texto">Caja</a>
 					</li>
 					<li class="nav-menu-item">
-						<a href= "proveedor.php" class="nav-menu-link nav-link texto">Provedores</a>
+						<a href="modules/productos/nuev_prod.html"  target="area-trabajo"  class="nav-menu-link nav-link texto">Productos</a>
 					</li>
 					<li class="nav-menu-item">
-						<a href="contacto.php" class="nav-menu-link nav-link texto">Contacto</a>
+						<a href="modules/1_users/user-buscar.html"  target="area-trabajo"  class="nav-menu-link nav-link texto">Usuarios</a>
 					</li>
 					<li class="nav-menu-item  dropdown">
 						<a class="nav-link dropdown-toggle nav-menu-link nav-link texto" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
 								Ajustes
 						</a>
 						<div class="dropdown-menu dropdown-menu-right">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="modules/productos/nuev_prod.html"  target="area-trabajo" >Perfil</a>
+							<a class="dropdown-item" href="modules/ajustes/ajustes.html"  target="area-trabajo" >cambiar contraseña</a>
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Cerrar sesión</a>
+							<a class="dropdown-item text-danger" href="inicio.html" >Cerrar sesión</a>
 						</div>
 					</li>
 				</ul>
 			</div>
 		</nav>
 	</div>
-	<!-- Principal -->	
-	<section class="row">
-		<!-- Panel lateral -->
-		<aside class="col-2 p-2 bg-secondary text-light">
 
+	<!-- Principal -->	
+	<!-- Panel lateral -->
+	<section class="row">     
+		
+		<main class="col-12 p-0 m-0">
+			<!-- Carga de Páginas -->
+			<iframe name="area-trabajo" src="modules/principal/pagprincipal.html"  width="100%" height="100%" frameborder="0"></iframe>				
+		</main>
+	</section>
+
+	
+	<section class="">
+		<!-- Footer -->
+		<footer class="text-center text-white " style="background-color: #7c7e7f;">
+		  <!-- Grid container -->
+		  <div class="container p-0 pb-0">
+			<!-- Section: CTA -->
+			<section class="">
+			  <p class="d-flex justify-content-center align-items-center">
+				<span class="me-3 texto-n">Calle 9 bis No 19A - 38 </span>
+				<button type="button" class="m-2 btn btn-outline-light btn-rounded texto-n">
+				  Contacto
+				</button>
+			  </p>
+	</section>
+			<!-- Section: CTA -->
+		  </div>
+		  <!-- Grid container -->
+	  
+		  <!-- Copyright -->
+		  <div class="text-center p-2 bg-dark" style="background-color: rgba(0, 0, 0, 0.2);">
+			© 2020 Copyright: Lock Inventory
+		  </div>
+		  <!-- Copyright -->
+		</footer>
+		<!-- Footer -->
+	  </section>
 	<script src="js/jquery.slim.min.js"></script>	
 	<script src="js/popper.min.js"></script>	
 	<script src="js/bootstrap.js"></script>	
+
+	
 </body>
 </html>

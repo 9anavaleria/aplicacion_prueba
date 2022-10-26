@@ -5,10 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/styles-dashboard.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../css/styles-dashboard.css">
 </head>
 <body>
-    SOY EL FORMULARIO DE REGISTRO
+    <section class="row mb-0 mp-0">
+        <!-- Panel lateral -->
+        <aside class="col-3  bg-secondary text-light">
+            <div class="list-group p-4">
+                <button type="button" class="bg-dark  list-group-item list-group-item-action active texto align-self-center" aria-current="true">
+                  Usuario
+                </button>
+                <a type="button" class="list-group-item list-group-item-action" href="user-create.html">Crear usuarios</a>
+                
+                <a type="button" class="list-group-item list-group-item-action" href="user-tabla.html">Ver usuario</a>
+                <a type="button" class="list-group-item list-group-item-action" href="user-buscar.html" disabled>Buscar usuario</a>
+              </div>
+        </aside>
+        <!-- Contenido -->
+        <div class="col-9 ">
+    
+        <div class="col-50 centrar texto-n">
+                    <h1> Crear Usuario</h1>
+            <form>
+				<div class="row p-2">
+					<div class="col-2 p-4 m-0">
+						<label class="texto-n " for="exampleFormControlInput1">Id Ususario</label>
+						<input type="text" class="form-control-plaintext" placeholder="1">
+					</div>
+					<div class="col-5 p-4 m-0">
+						<label class="texto-n" for="exampleFormControlInput1">Nombre Usuario</label>
+						<input type="text" class="form-control" placeholder="">
+					</div>
+                    
+					<div class="col-4 p-4 m-0">
+						<label class="texto-n" for="exampleFormControlInput1">Rol</label>
+						<select id="inputState" class="form-control">
+							<option selected>Selecciona</option>
+							<option>Administrador</option>
+							<option>Vendedor</option>
+						  </select>
+					</div>
+					<div class="col-3 p-4 m-0">
+						<label class="texto-n" for="exampleFormControlInput1">Telefono</label>
+						<input type="text" class="form-control" placeholder="">
+					</div>
+					<div class="col-4 p-4 m-0">
+						<label class="texto-n" for="exampleFormControlInput1">Correo</label>
+						<input type="text" class="form-control" placeholder="">
+					</div>
+                    <div class="col-4 p-4 m-0">
+						<label class="texto-n" for="exampleFormControlInput1">Dirección</label>
+						<input type="text" class="form-control" placeholder="">
+					</div>
+					<div class="col-3 p-4 m-0 form-group">
+                        <label for="inputPassword6" class="texto-n">Contraseña</label>
+                        <input type="password" id="inputPassword6" class="form-control " aria-describedby="passwordHelpInline">
+                        <small id="passwordHelpInline" class="text-muted">
+                          Must be 8-20 characters long.
+                        </small>
+                    </div>
+                    <div class="col-3 p-4 m-0 form-group">
+                        <label for="inputPassword6" class="texto-n">Confirmación</label>
+                        <input type="password" id="inputPassword6" class="form-control " aria-describedby="passwordHelpInline">
+                    </div>
+				</div> 
+				<div class="row justify-content-md-center p-2">
+					<button type="button" class="btn btn-dark btn-lg m-2">Guardar</button>
+					<button type="button" class="btn btn-danger btn-lg m-2">Cancelar</button>
+					<button type="button" class="btn btn-secondary btn-lg m-2">Buscar</button>
+				</div>
+			</form>
+        </div>
+    </section>
+      
+    
+<script src="../../js/jquery.slim.min.js"></script>	
+<script src="../../js/popper.min.js"></script>	
+<script src="../../js/bootstrap.js"></script>	
 </body>
 </html>
